@@ -1,0 +1,16 @@
+correto = 20
+totalTentativas = 3
+rodada = 1
+
+while(rodada <= totalTentativas):
+  print("tentativa", rodada, "de", totalTentativas)
+  seuChute = int(input("digite seu chute: "))
+  if seuChute == correto:
+    print("você acertou")
+  else:
+    if seuChute > correto:
+      print("o número correto é menor")
+    else:
+      print("o número correto é maior")
+
+  rodada = rodada + 1
